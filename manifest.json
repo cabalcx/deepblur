@@ -1,0 +1,21 @@
+{
+
+  "description": "Blurs out images on a webpage so researches can focus on content and navigation.",
+  "manifest_version": 2,
+  "name": "deepblur",
+  "version": "1.0",
+  "homepage_url": "https://github.com/cabalcx/deepblur",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "128": "icons/icon-128.png",
+    "500": "icons/icon-500.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["background.js"]
+    }
+  ]
+
+}

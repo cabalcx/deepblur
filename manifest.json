@@ -1,6 +1,6 @@
 {
 
-  "description": "Blurs out images on a webpage so researches can focus on content and navigation.",
+  "description": "Blurs out images on a webpage so researchers can focus on content and navigation.",
   "manifest_version": 2,
   "name": "deepblur",
   "version": "1.0",

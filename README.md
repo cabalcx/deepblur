@@ -1,6 +1,8 @@
 # deepblur
 DeepBlur: Firefox extension that blurs images
 
+<a href="https://addons.mozilla.org/en-US/firefox/addon/deepblur-simple-image-blurring/"><img src="icons/get-the-addon.png" /></a>
+
 <img src="example.png">
 
 ## Installing locally

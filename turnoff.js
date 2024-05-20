@@ -1,0 +1,1 @@
+browser.runtime.sendMessage({ name: 'turn-off', }, () => window.close());

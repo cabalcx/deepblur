@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>deepblur</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #fbfff4;
+            }
+
+            h1 {
+                text-transform: uppercase full-width;
+                font-size: 3em;
+            }
+
+            div {
+                padding:10px;
+            }
+
+            footer {
+                font-size: 0.8em;
+                color: #666;
+                padding: 10px;
+            }
+        </style>
+        <script>
+            // event listener for when checkbox toggled
+            document.getElementById('toggle').addEventListener('change', function() {
+                // get the checkbox state
+                var checked = this.checked;
+                console.log('checked:', checked);
+                // send the state to the background script
+                browser.runtime.sendMessage({'active': checked});
+            });
+        </script>
+    </head>
+    <body>
+        <center>
+            <div>
+                <h1>deepblur</h1>
+                <input type="checkbox" id="toggle" checked persist="checked" >
+                <label for="toggle">Enable image blurring</label>
+            </div>
+            <footer>developed by <a href="https://cabal.cx">cabal.cx</a> | <a href="https://github.com/cabalcx/deepblur">AGPL-3.0</a></footer>
+        </center>
+    </body>
+</html>
